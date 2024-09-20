@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Hermínio Francisco</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Seção Início -->
+    <section id="home" class="section-home">
+        <div class="container">
+            <h1>Hermínio Francisco</h1>
+            <p>Frontend Developer</p>
+            <p>Transformando ideias em interfaces interativas e responsivas.</p>
+            <div class="buttons">
+                <a href="#projects" class="btn">Ver Projetos</a>
+                <a href="#contact" class="btn">Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="about" class="section-about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>
+                Olá! Eu sou Hermínio Francisco, um desenvolvedor frontend apaixonado por criar interfaces web 
+                interativas e elegantes. Com experiência em HTML, CSS, JavaScript e frameworks como React e Bootstrap, 
+                estou constantemente aprimorando minhas habilidades.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="technologies" class="section-tech">
+        <div class="container">
+            <h2>Tecnologias</h2>
+            <ul class="tech-list">
+                <li><i class="ri-html5-fill"></i> HTML5</li>
+                <li><i class="ri-css3-fill"></i> CSS3</li>
+                <li><i class="ri-javascript-fill"></i> JavaScript</li>
+                <li><i class="ri-php-fill"></i> PHP</li>
+                <li><i class="ri-code-s-slash-line"></i> C#</li>
+                <li><i class="ri-bootstrap-fill"></i> Bootstrap</li>
+                <li><i class="ri-tailwindcss-line"></i> Tailwind CSS</li>
+                <li><i class="ri-git-branch-fill"></i> Git</li>
+                <li><i class="ri-github-fill"></i> GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="section-projects">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="kino.jpg" alt="Kino Angola">
+                    <h3>Kino Angola</h3>
+                    <p>Plataforma que conecta usuários a restaurantes e bares em Luanda, focada em personalização de experiências.</p>
+                    <a href="https://www.kinoangola.com" target="_blank">Visite o Site</a>
+                </div>
+                <div class="card">
+                    <img src="eboostify.jpg" alt="eBoostify">
+                    <h3>eBoostify</h3>
+                    <p>Agência de marketing digital especializada em soluções personalizadas para pequenas empresas.</p>
+                    <a href="https://www.eboostify.com" target="_blank">Visite o Site</a>
+                </div>
+                <div class="card">
+                    <img src="inlin.jpg" alt="InLin">
+                    <h3>InLin</h3>
+                    <p>Plataforma de ensino online oferecendo cursos interativos e acessíveis para jovens profissionais.</p>
+                    <a href="https://www.inlin.com" target="_blank">Visite o Site</a>
+                </div>
+                <div class="card">
+                    <img src="kabas.jpg" alt="Kabas Essences">
+                    <h3>Kabas Essences</h3>
+                    <p>Loja online de perfumes de luxo, oferecendo uma vasta gama de fragrâncias exclusivas.</p>
+                    <a href="https://www.kabasessences.com" target="_blank">Visite o Site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback -->
+    <section id="feedback" class="section-feedback">
+        <div class="container">
+            <h2>Feedbacks</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="feedback-card">
+                            <p>"Hermínio entregou um projeto incrível e no prazo! Estou impressionada com o profissionalismo dele." - Maria</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="feedback-card">
+                            <p>"Trabalhar com Hermínio foi uma experiência excelente. Ele superou nossas expectativas!" - João</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="feedback-card">
+                            <p>"Recomendo fortemente o trabalho de Hermínio. O design e funcionalidade que ele criou foram ótimos!" - Carla</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Assunto:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://github.com/seu-github" target="_blank"><i class="ri-github-fill"></i> GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/seu-perfil" target="_blank"><i class="ri-linkedin-fill"></i> LinkedIn</a></li>
+                <li><a href="mailto:seu-email@dominio.com"><i class="ri-mail-fill"></i> E-mail</a></li>
+            </ul>
+            <p>&copy; 2024 Hermínio Francisco. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
