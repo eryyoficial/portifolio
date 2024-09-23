@@ -210,6 +210,7 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #1b1b1b;
 }
 
 
@@ -292,7 +293,6 @@ li {
 
 
 
-
 /*======================================== TECHNOLOGIES ========================================*/
 
 .section-tech {
@@ -300,6 +300,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #1b1b1b;
 }
 
 .section-tech .tech-list {
@@ -406,6 +407,7 @@ li {
 /*======================================== FEEDBACK ========================================*/
 .section-feedback {
     flex-direction: column;
+    background-color: #1b1b1b;
 }
 
 
@@ -469,7 +471,9 @@ li {
     width: 300px;
 }
 
-
+.swiper-pagination-bullet{
+    background-color: var(--color-blue-principal);
+}
 
 
 
