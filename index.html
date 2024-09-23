@@ -1,152 +1,418 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Hermínio Francisco</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" />
-    <link rel="stylesheet" href="style.css">
+    <title>Kino Angola</title>
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="shortcut icon" href="assets/images/logomarca/KINO DESIGN (1).png" type="image/x-icon">
 </head>
+
 <body>
-
-    <!-- Seção Início -->
-    <section id="home" class="section-home">
-        <div class="container">
-            <h1>Hermínio Francisco</h1>
-            <p>Frontend Developer</p>
-            <p>Transformando ideias em interfaces interativas e responsivas.</p>
-            <div class="buttons">
-                <a href="#projects" class="btn">Ver Projetos</a>
-                <a href="#contact" class="btn">Contato</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sobre Mim -->
-    <section id="about" class="section-about">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>
-                Olá! Eu sou Hermínio Francisco, um desenvolvedor frontend apaixonado por criar interfaces web 
-                interativas e elegantes. Com experiência em HTML, CSS, JavaScript e frameworks como React e Bootstrap, 
-                estou constantemente aprimorando minhas habilidades.
-            </p>
-        </div>
-    </section>
-
-    <!-- Tecnologias -->
-    <section id="technologies" class="section-tech">
-        <div class="container">
-            <h2>Tecnologias</h2>
-            <ul class="tech-list">
-                <li><i class="ri-html5-fill"></i> HTML5</li>
-                <li><i class="ri-css3-fill"></i> CSS3</li>
-                <li><i class="ri-javascript-fill"></i> JavaScript</li>
-                <li><i class="ri-php-fill"></i> PHP</li>
-                <li><i class="ri-code-s-slash-line"></i> C#</li>
-                <li><i class="ri-bootstrap-fill"></i> Bootstrap</li>
-                <li><i class="ri-tailwindcss-line"></i> Tailwind CSS</li>
-                <li><i class="ri-git-branch-fill"></i> Git</li>
-                <li><i class="ri-github-fill"></i> GitHub</li>
+    <!-- ========================= CABEÇALHO ========================= -->
+    <header class="text-bg-light sticky-top">
+        <div class="d-flex align-items-center justify-content-between menudiv">
+            <input type="checkbox" name="check" id="check">
+            <label for="check" class="checkbtn">
+                <i class='bx bx-menu nav_menu text-dark'></i>
+            </label>
+            <a href="index.html" class="logo d-flex align-items-center justify-content-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <img src="assets/images/logomarca/KINO DESIGN (1).png" alt="Kino Angola" height="30">
+                <h2 class="my-0 mx-1 d-flex align-items-center justify-content-center fw-semibold" style="font-size: 1.3em;">Kino Angola</h2>
+            </a>
+            <ul class="nav m-auto justify-content-center nav_list">
+                <li class="nav_item"><a href="index.html" class="nav_link text-dark ">Início</a></li>
+                <li class="nav_item"><a href="views/estabelecimentos.html" class="nav_link text-dark ">Estabelecimentos</a></li>
+                <li class="nav_item"><a href="views/sejamembro.html" class="nav_link text-dark ">Seja Membro</a></li>
+                <li class="nav_item"><a href="views/contact.html" class="nav_link text-dark ">Contatos</a></li>
+                <li class="nav_item"><a href="views/about.html" class="nav_link text-dark ">Sobre</a></li>
             </ul>
-        </div>
-    </section>
-
-    <!-- Projetos -->
-    <section id="projects" class="section-projects">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="project-cards">
-                <div class="card">
-                    <img src="kino.jpg" alt="Kino Angola">
-                    <h3>Kino Angola</h3>
-                    <p>Plataforma que conecta usuários a restaurantes e bares em Luanda, focada em personalização de experiências.</p>
-                    <a href="https://www.kinoangola.com" target="_blank">Visite o Site</a>
-                </div>
-                <div class="card">
-                    <img src="eboostify.jpg" alt="eBoostify">
-                    <h3>eBoostify</h3>
-                    <p>Agência de marketing digital especializada em soluções personalizadas para pequenas empresas.</p>
-                    <a href="https://www.eboostify.com" target="_blank">Visite o Site</a>
-                </div>
-                <div class="card">
-                    <img src="inlin.jpg" alt="InLin">
-                    <h3>InLin</h3>
-                    <p>Plataforma de ensino online oferecendo cursos interativos e acessíveis para jovens profissionais.</p>
-                    <a href="https://www.inlin.com" target="_blank">Visite o Site</a>
-                </div>
-                <div class="card">
-                    <img src="kabas.jpg" alt="Kabas Essences">
-                    <h3>Kabas Essences</h3>
-                    <p>Loja online de perfumes de luxo, oferecendo uma vasta gama de fragrâncias exclusivas.</p>
-                    <a href="https://www.kabasessences.com" target="_blank">Visite o Site</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Feedback -->
-    <section id="feedback" class="section-feedback">
-        <div class="container">
-            <h2>Feedbacks</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="feedback-card">
-                            <p>"Hermínio entregou um projeto incrível e no prazo! Estou impressionada com o profissionalismo dele." - Maria</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="feedback-card">
-                            <p>"Trabalhar com Hermínio foi uma experiência excelente. Ele superou nossas expectativas!" - João</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="feedback-card">
-                            <p>"Recomendo fortemente o trabalho de Hermínio. O design e funcionalidade que ele criou foram ótimos!" - Carla</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contact" class="section-contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <form>
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="subject">Assunto:</label>
-                <input type="text" id="subject" name="subject" required>
-
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Enviar</button>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 extras_btn" role="search">
+                <input type="search" class="form-control form-control-dark form_control" placeholder="Pesquisar..."
+                    aria-label="Search">
             </form>
+            <div class="text-end extras_btn">
+                <a href="views/login.html" type="button" class="text-success btn btn-outline-success me-2">Login</a>
+                <a href="views/register.html" type="button" class="text-success btn btn-outline-success ">Sign-up</a>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <ul class="social-links">
-                <li><a href="https://github.com/eryyoficial" target="_blank"><i class="ri-github-fill"></i> GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/eryyoficial" target="_blank"><i class="ri-linkedin-fill"></i> LinkedIn</a></li>
-                <li><a href="mailto:eryyoficial@gmail.com"><i class="ri-mail-fill"></i> E-mail</a></li>
+
+    <!-- ========================= CARROSSEL HERO ========================= -->
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="coverimg-one"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Bem-vindo à Kino Angola</h1>
+                        <p class="opacity-75">Encontre os melhores restaurantes, bares, e roulotes da nossa banda</p>
+                        <p><a class="botao_principal text-white" href="#searchfilter">Explorar Agora</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="coverimg-two"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Gastronomia Cultural</h1>
+                        <p>Sua Aventura Gastronômica Começa <a class="botao_principal text-white" href="views/estabelecimentos.html#cultural">Aqui</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="coverimg-three"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h2>Encontre os melhores restaurantes <br> e locais de lazer ao seu redor.</h2>
+                        <p><a class="botao_principal text-white" href="views/estabelecimentos.html">Visitar Estabelecimentos</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- ========================= BUSCA RÁPIDA - Kino Angola ========================= -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <h1 class="text-center fw-bold text-body-emphasis">Encontre o Seu Próximo Destino de Lazer</h1>
+        <div class="col-lg-6 mx-auto">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-4">
+                <input type="search" placeholder="Buscar por nome, tipo de comida, localização..." aria-label="Search"
+                    class="form-control px-4">
+                <button type="button" class="botao_principal btn-lg px-4 me-sm-3 text-white">Pesquisar</button>
+            </div>
+        </div>
+
+        <div class="row align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="assets/images/qd (14).png" class="d-block mx-lg-auto img-fluid" alt="Explorar Locais em Luanda"
+                    width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Explore Novas Experiências em Luanda</h1>
+                <p class="lead">Descubra novos lugares para explorar em Luanda. Utilize nossa plataforma para encontrar os melhores restaurantes, bares, roulotes e locais de lazer que combinam com seu gosto e orçamento. Com a Kino Angola, suas opções são infinitas.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="botao_principal btn-lg px-4 me-md-2 text-white">Ver Estabelecimentos</button>
+                    <button type="button" class="botao_principal px-4 text-white">Criar Conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ========================= BANNER 1 ========================= -->
+    <div class="p-5 text-center services">
+        <h1 class="text-center fw-bold text-body-emphasis">Serviços</h1>
+        <!-- ========================= SERVIÇOS ========================= -->
+        <div class="mx-auto mt-5 grid_services">
+            <!-- Serviço 1 -->
+            <div class="service-item">
+                <div class="service-icon mb-3"><i class='bx bx-food-menu service_icon'></i></div>
+                <h4>Variedade Gastronômica</h4>
+                <p>Explore uma vasta seleção de comidas e bebidas, desde pratos tradicionais a experiências
+                    gastronômicas exclusivas.</p>
+            </div>
+            <!-- Serviço 2 -->
+            <div class="service-item">
+                <div class="service-icon mb-3"><i class='bx bx-box service_icon'></i></div>
+                <h4>Peça e Receba em Casa</h4>
+                <p>Faça seus pedidos online e receba no conforto da sua casa, com entrega rápida e eficiente.</p>
+            </div>
+            <!-- Serviço 3 -->
+            <div class="service-item">
+                <div class="service-icon mb-3"><i class='bx bx-wallet service_icon'></i></div>
+                <h4>Pagamentos Seguros</h4>
+                <p>Realize pagamentos de forma segura e prática com diversas opções de pagamento e um sistema robusto de segurança.</p>
+            </div>
+            <!-- Serviço 4 -->
+            <div class="service-item">
+                <div class="service-icon mb-3"><i class='bx bx-planet service_icon'></i></div>
+                <h4>Maior Visibilidade Online</h4>
+                <p>Tenha seu negócio destacado em uma plataforma amplamente acessada, aumentando a visibilidade e
+                    atraindo novos clientes.</p>
+            </div>
+            <!-- Serviço 5 -->
+            <div class="service-item">
+                <div class="service-icon mb-3"><i class='bx bx-cube service_icon'></i></div>
+                <h4>Gerenciamento Simplificado</h4>
+                <p>Atualize informações, cardápios e preços facilmente, e mantenha o controle total sobre o seu
+                    perfil e ofertas.</p>
+            </div>
+            <!-- Serviço 6 -->
+            <div class="service-item">
+                <div class="service-icon mb-3"><i class='bx bx-support service_icon'></i></div>
+                <h4>Suporte Dedicado</h4>
+                <p>Receba assistência especializada para resolver problemas e otimizar a presença do seu negócio na
+                    plataforma.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ========================= BANNER 2 ========================= -->
+    <div class="container my-5 py-4 text-center border-bottom">
+        <h1 class="text-center fw-bold text-body-emphasis my-5">De Pequenas Roulotes à Restaurantes Luxuosos</h1>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+            <div class="container px-5">
+                <img src="assets/images/back (6).png" class="img-fluid border rounded-3 shadow-lg mb-4"
+                    alt="Example image" width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ========================= BANNER 3 ========================= -->
+    <div class="py-2 container mx-auto pai_estabeleciment">
+        <div style="flex-direction: column; gap: 0 2rem"
+            class="justify-content-center align-items-center my-3 card_estabeleciment">
+            <h2>Bares</h2>
+            <p>Encontre bares incríveis para se divertir.</p>
+
+            <img class="img_estabelciment" src="assets/images/qd (12).png" alt="imagem rest" srcset="">
+
+        </div>
+        <div style="flex-direction: column; gap: 0 2rem"
+            class="justify-content-center align-items-center my-3 card_estabeleciment">
+            <h2>Churrascaria </h2>
+            <p>Explore opções de grelhados deliciosos de rua.</p>
+
+            <img class="img_estabelciment" src="assets/images/qd (13).png" alt="imagem rest" srcset="">
+
+        </div>
+        <div style="flex-direction: column; gap: 0 2rem"
+            class="justify-content-center align-items-center my-3 card_estabeleciment">
+            <h2>Roulotes</h2>
+            <p>Sabores autênticos na palma da mão. </p>
+
+            <img class="img_estabelciment" src="assets/images/qd new (1).png" alt="imagem rest" srcset="">
+        </div>
+        <div style="flex-direction: column; gap: 0 2rem"
+            class="justify-content-center align-items-center my-3 card_estabeleciment">
+            <h2>Restaurantes</h2>
+            <p>Descubra os melhores restaurantes na cidade.</p>
+
+            <img class="img_estabelciment" src="assets/images/qd (11).png" alt="imagem rest" srcset="">
+        </div>
+    </div>
+
+
+    <!-- ========================= BANNER 4 ========================= -->
+    <div class="container text-center py-5">
+        <h1 class="text-center fw-bold text-body-emphasis">Top 3 Estabelecimentos com Maiores Avaliações</h1>
+        <!-- ========================= TOP 3 MELHORES ESTABELECIMENTOS ========================= -->
+        <div class="container my-5">
+            <div class="row top_esta">
+                <!-- Estabelecimento 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/images/qd (2).png" class="card-img-top" alt="Imagem do Estabelecimento 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Gastronomia delícia</h5>
+                            <p class="card-text">Descubra o melhor da cozinha italiana com pratos autênticos e uma
+                                seleção de vinhos premiados.</p>
+                            <p class="card-text"><strong>Avaliação:</strong> 4.9/5</p>
+                            <a href="link-para-estabelecimento1" class="botao_principal text-white">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Estabelecimento 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/images/qd new (14).png" class="card-img-top" alt="Imagem do Estabelecimento 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Café do Bairro</h5>
+                            <p class="card-text">Um espaço acolhedor com cafés especiais e uma atmosfera relaxante
+                                para todos os momentos do dia.</p>
+                            <p class="card-text"><strong>Avaliação:</strong> 4.8/5</p>
+                            <a href="link-para-estabelecimento2" class="botao_principal text-white">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Estabelecimento 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/images/qd new (18).png" class="card-img-top" alt="Imagem do Estabelecimento 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Sabor Tropical</h5>
+                            <p class="card-text">Uma mistura vibrante de sabores exóticos e pratos únicos inspirados
+                                nas culinárias do mundo inteiro.</p>
+                            <p class="card-text"><strong>Avaliação:</strong> 4.7/5</p>
+                            <a href="link-para-estabelecimento3" class="botao_principal text-white">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="load-more-btn" class="botao_principal load-more mb-5 text-white">Ver mais</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- ========================= BANNER 5 - Kino Angola ========================= -->
+    <div class="container col-xl-10 col-xxl-8 px-4 pb-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Junta-se à Nossa Plataforma</h1>
+                <p class="col-lg-10 fs-4">Explore uma seleção exclusiva de restaurantes, bares e locais de lazer em
+                    Luanda. E para você, empreendedor, encontre o lugar perfeito para o seu <strong>Biolo</strong> aqui na Kino Angola. Inscreva-se agora mesmo e saiba tudo que podemos proporcionar para si!</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com">
+                        <label for="floatingInput">Endereço de Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                        <label for="floatingPassword">Senha</label>
+                    </div>
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Lembrar-me
+                        </label>
+                    </div>
+                    <button class="w-100 botao_principal text-white" type="submit">Registar-se</button>
+                    <hr class="my-4">
+                    <small class="text-body-secondary">Ao clicar em Registar-se, você concorda com os termos de
+                        uso.</small>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================= RODAPE - Kino Angola ========================= -->
+    <footer class="pt-5 px-3 bg-dark text-white">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Empresa</h5>
+                <ul class="nav flex-column ">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Nossa História</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Missãp e Visão</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Equipe</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Parcerias</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Ajuda</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Suporte ao Cliente</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Guia de Usuário</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">FAQs</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Termos e Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Contecte-se</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Eventos</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">Descontos e
+                            Promoções</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white-50">
+                            <strong>kinoangolaoficial@gmail.com</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Inscreva a sua empresa no nosso <strong> site</strong></h5>
+                    <p>Envie-nos o seu e-mail para que possamos entrar em contato consigo</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Endereço de e-mail</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn " type="button">Inscrever</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2024 Kino Angola. Todos os direitos reservados.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="#">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook" />
+                        </svg>
+                    </a>
+                </li>
             </ul>
-            <p>&copy; 2024 Hermínio Francisco. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
