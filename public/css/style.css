@@ -117,6 +117,7 @@ li {
     background-color: var(--color-white-principal);
     scale: 1.04;
 }
+
 .botao_second {
     color: var(--color-blue-second);
     border-radius: 50px;
@@ -141,7 +142,7 @@ li {
     background-color: var(--color-darkness);
 }
 
-.container h2{
+.container h2 {
     font-size: var(--font-size-big);
     color: var(--color-blue-principal);
 }
@@ -252,35 +253,36 @@ li {
 
 /*======================================== ABOUT ========================================*/
 
-.section-about{
+.section-about {
     display: flex;
     flex-direction: column;
 }
-.section-about .content{
+
+.section-about .content {
     display: grid;
     grid-template-columns: repeat(2, 400px);
     gap: 2rem;
 }
 
 
-.section-about .content h3{
+.section-about .content h3 {
     font-size: var(--font-size-big);
     color: var(--color-white-principal);
 }
 
-.section-about .content p{
+.section-about .content p {
     margin-bottom: .5rem;
     color: var(--color-gray-principal);
 }
 
-.container .baixo{
+.container .baixo {
     color: var(--color-blue-principal);
     font-size: var(--font-size-biggest);
     opacity: .5;
     transition: .4s;
 }
 
-.container .baixo:hover{
+.container .baixo:hover {
     scale: 1.04;
     opacity: 1;
 }
@@ -293,7 +295,7 @@ li {
 
 /*======================================== TECHNOLOGIES ========================================*/
 
-.section-tech{
+.section-tech {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,9 +320,11 @@ li {
     cursor: pointer;
     box-shadow: var(--boxshadow6);
 }
-.tech-list li strong{
+
+.tech-list li strong {
     font-size: 1.2rem;
 }
+
 .tech-list i {
     font-size: 64px;
     color: var(--color-blue-second);
@@ -336,20 +340,19 @@ li {
 
 
 
-/* Cards de Projetos */
+/*======================================== PROJECTS ========================================*/
 
-.section-projects{
+.section-projects {
     display: flex;
     flex-direction: column;
 }
 
-.project-cards{
+.project-cards {
     display: grid;
     grid-template-columns: repeat(2, 400px);
     gap: 4rem;
-} 
+}
 
-/* Continuação dos Cards de Projetos */
 .card {
     background-color: #202020;
     padding: 20px;
@@ -370,11 +373,13 @@ li {
     margin-top: 15px;
     color: var(--color-blue-principal);
     font-size: var(--font-size-large);
+    margin-bottom: 1rem;
 }
 
 .card p {
     color: #cfcfcf;
-    font-size: 0.9em;
+    font-size: var(--font-size-small);
+    margin-bottom: 1rem;
 }
 
 .card a {
@@ -386,46 +391,111 @@ li {
     transition: .4s ease;
 }
 
-.card a:hover {
-    scale: 1.01;
-}
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
-/* Carrossel de Feedbacks */
-.section-feedback .swiper-container {
+
+
+
+
+
+
+
+/*======================================== FEEDBACK ========================================*/
+.section-feedback {
+    flex-direction: column;
+}
+
+
+.swiper-container {
     width: 100%;
     padding: 50px 0;
 }
 
-.feedback-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    border: 1px solid #00ff88;
-    padding: 30px;
-    border-radius: 10px;
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
     text-align: center;
-    color: #cfcfcf;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 3rem;
 }
 
-.feedback-card p {
-    font-size: 1.1em;
-    line-height: 1.6;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Seção de Contato */
+.feedback-card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-card img {
+    width: 250px;
+    border-radius: 50%;
+    padding: 4px;
+    background: rgb(0, 22, 31);
+    background: linear-gradient(114deg, rgba(0, 22, 31, 1) 0%, rgba(0, 225, 255, 1) 48%, rgba(0, 48, 68, 1) 100%);
+}
+
+.feedback-card h3 {
+    margin: 1rem 0 .5rem;
+}
+
+.feedback-card .area {
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-bold);
+    color: gray;
+    margin-bottom: .5rem;
+}
+
+.feedback-card .comentario {
+    font-size: var(--font-size-small);
+    color: var(--color-gray-principal);
+    width: 300px;
+}
+
+
+
+
+
+
+
+/*======================================== CONTACT ========================================*/
+.section-contact {
+    flex-direction: column;
+    background: rgb(0, 22, 31);
+    background: linear-gradient(90deg, rgba(0, 22, 31, 1) 0%, rgba(0, 225, 255, 1) 100%);
+}
+
+.section-contact h2 {
+    color: var(--color-white-principal);
+}
+
 .section-contact form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 600px;
+    width: 500px;
     margin: 0 auto;
 }
 
 .section-contact label {
-    color: #cfcfcf;
+    color: var(--color-white-principal);
     font-size: 1em;
 }
 
@@ -433,8 +503,9 @@ li {
 .section-contact textarea {
     padding: 10px;
     background-color: #2b2b2b;
-    border: 1px solid #00ff88;
+    border: 1px solid var(--color-blue-principal);
     border-radius: 5px;
+
     color: #fff;
     font-size: 1em;
 }
@@ -444,8 +515,9 @@ li {
 }
 
 .section-contact button {
+    font-weight: var(--font-weight-bold);
     padding: 10px 20px;
-    background-color: #00ff88;
+    background-color: var(--color-white-principal);
     color: #1e1e1e;
     border: none;
     border-radius: 5px;
@@ -454,39 +526,39 @@ li {
 }
 
 .section-contact button:hover {
-    background-color: #00cc70;
+    background-color: var(--color-blue-principal);
 }
 
 /* Footer */
 footer {
     background-color: #111;
-    padding: 40px 0;
     text-align: center;
 }
-
+.footer{
+    flex-direction: column;
+}
 footer .social-links {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 0;
 }
 
 footer .social-links li {
-    font-size: 1.5em;
+    font-size: var(--font-size-large);
 }
 
 footer .social-links a {
-    color: #00ff88;
+    color: var(--color-white-principal);
+    font-weight: var(--font-weight-bold);
     transition: color 0.3s ease;
 }
 
 footer .social-links a:hover {
-    color: #00cc70;
+    color: var(--color-blue-principal);
 }
 
 footer p {
-    margin-top: 20px;
-    font-size: 0.9em;
+    font-size: var(--font-size-small);
     color: #cfcfcf;
 }

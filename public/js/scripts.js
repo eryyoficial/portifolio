@@ -1,5 +1,5 @@
 // Inicialização do SwiperJS para o carrossel de feedbacks
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.mySwiper', {
   loop: true,
   autoplay: {
     delay: 3000,
