@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Hermínio Francisco</title>
+    <link rel="shortcut icon" href="public/images/icons/logo (1).png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 
@@ -24,16 +25,16 @@
                 <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#home" class="nav-link">Conheça-me</a>
+                <a href="#about" class="nav-link">Conheça-me</a>
             </li>
             <li class="nav-item">
-                <a href="#home" class="nav-link">Tecnologias</a>
+                <a href="#technologies" class="nav-link">Tecnologias</a>
             </li>
             <li class="nav-item">
-                <a href="#home" class="nav-link">Projetos</a>
+                <a href="#projects" class="nav-link">Projetos</a>
             </li>
             <li class="nav-item">
-                <a href="#home" class="nav-link">Contato</a>
+                <a href="#contact" class="nav-link">Contato</a>
             </li>
         </ul>
         <div class="nav-extras">
@@ -43,11 +44,12 @@
     </header>
 
     <!-- Seção Início -->
-    <section id="home" class="section-home container">
+    <section id="home" class="container section-home">
         <div class="content">
             <h3>Desenvolvedor Fontend</h3>
             <h1>Hermínio Francisco</h1>
-            <p>Um desenvolvedor comprometido em transformando as suas ideias de negócio em interfaces interativas e responsivas.</p>
+            <p>Um desenvolvedor comprometido em transformando as suas ideias de negócio em interfaces interativas e
+                responsivas.</p>
             <div class="buttons">
                 <a href="#projects" class="botao_second">Ver Projetos</a>
                 <a href="#contact" class="botao_second">Contato</a>
@@ -59,36 +61,49 @@
     </section>
 
     <!-- Sobre Mim -->
-    <section id="about" class="section-about">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <div class="content">
+    <section id="about" class="container section-about">
+        <h2>Sobre Mim</h2>
+        <div class="content">
+            <img src="public/images/me2.png" alt="">
+            <div class="text">
+                <h3>Olá,</h3>
                 <p>
-                    Olá! Eu sou Hermínio Francisco, um desenvolvedor frontend apaixonado por criar interfaces web
-                    interativas e elegantes. Com experiência em HTML, CSS, JavaScript e frameworks como React e Bootstrap,
-                    estou constantemente aprimorando minhas habilidades.
+                    Eu sou o Hermínio Francisco, um desenvolvedor frontend apaixonado por criar interfaces web
+                    interativas e elegantes. Com experiência em HTML, CSS, JavaScript e frameworks como Bootstrap,
+                    Tailwind Css e Blade Template (Laravel), estou constantemente aprimorando minhas habilidades.
                 </p>
-<img src="" alt="">
+                <p>
+                    Ao longo da minha carreira, desenvolvi projetos que priorizam a experiência do usuário, performance
+                    e design responsivo.
+                    Meu objetivo é sempre criar soluções que sejam funcionais e visualmente atraentes.
+                </p>
+                <p>
+                    Atualmente, estou focado em expandir meus conhecimentos em frameworks modernos como Next.js e no
+                    desenvolvimento fullstack com tecnologias associadas à plataforma .NET.
+                </p>
             </div>
         </div>
+        <a class="baixo" href="#technologies"><i class="ri-arrow-down-double-line"></i></a>
+    </section>
+    </div>
+    </div>
     </section>
 
     <!-- Tecnologias -->
-    <section id="technologies" class="section-tech">
-        <div class="container">
+    <section id="technologies" class="container section-tech">
             <h2>Tecnologias</h2>
             <ul class="tech-list">
-                <li><i class="ri-html5-fill"></i> HTML5</li>
-                <li><i class="ri-css3-fill"></i> CSS3</li>
-                <li><i class="ri-javascript-fill"></i> JavaScript</li>
-                <li><i class="ri-php-fill"></i> PHP</li>
-                <li><i class="ri-code-s-slash-line"></i> C#</li>
-                <li><i class="ri-bootstrap-fill"></i> Bootstrap</li>
-                <li><i class="ri-tailwindcss-line"></i> Tailwind CSS</li>
-                <li><i class="ri-git-branch-fill"></i> Git</li>
-                <li><i class="ri-github-fill"></i> GitHub</li>
+                <li><img src="public/images/icons/html.png" alt="">  <strong>HTML5</strong></li>
+                <li><img src="public/images/icons/css.png" alt=""> <strong>CSS3</strong></li>
+                <li><img src="public/images/icons/js.png" alt=""> <strong>JavaScript</strong></li>
+                <li><img src="public/images/icons/php.png" alt=""><strong>PHP</strong></li>
+                <li><img src="public/images/icons/c-sharp.png" alt=""> <strong>c-sharp</strong></li>
+                <li><img src="public/images/icons/bootstrap.png" alt=""> <strong>Bootstrap</strong></li>
+                <li><img src="public/images/icons/tailwind.png" alt=""> <strong>Tailwind CSS</strong></li>
+                <li><img src="public/images/icons/git.png" alt=""> <strong>Git</strong></li>
+                <li><img src="public/images/icons/github.png" alt=""> <strong>GitHub</strong></li>
             </ul>
-        </div>
+        <a class="baixo" href="#projects"><i class="ri-arrow-down-double-line"></i></a>
     </section>
 
     <!-- Projetos -->
@@ -127,8 +142,7 @@
     </section>
 
     <!-- Feedback -->
-    <section id="feedback" class="section-feedback">
-        <div class="container">
+    <section id="feedback" class="container section-feedback">
             <h2>Feedbacks</h2>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -151,7 +165,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 

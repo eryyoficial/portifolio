@@ -27,7 +27,7 @@
     --color-blue-second: #006170;
     --color-dark-principal: #202022;
     --color-darkness: #161616;
-    --color-gray-principal: #878787;
+    --color-gray-principal: #c4c4c4;
     --color-gray-second: #CACACA;
     --color-white-principal: #FFFFFF;
     --color-white-second: #F2F2F2;
@@ -35,7 +35,7 @@
 
     /*======================================== SHADOW ========================================*/
     --boxshadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    --boxshadow6: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --boxshadow6: rgba(0, 174, 255, 0.2) 0px 2px 8px 0px;
     --boxshadow22: rgba(50, 76, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     --boxshadow-color: rgba(46, 179, 240, 0.4) -5px 5px, rgba(46, 169, 240, 0.3) -10px 10px, rgba(46, 179, 240, 0.2) -15px 15px, rgba(46, 169, 240, 0.1) -20px 20px, rgba(46, 169, 240, 0.05) -25px 25px;
 
@@ -133,8 +133,12 @@ li {
 }
 
 .container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
     padding: 4rem 8rem;
-    border: 10px solid green;
+    background-color: var(--color-darkness);
 }
 
 .container h2{
@@ -197,13 +201,6 @@ li {
     transition: .4s;
 }
 
-/* .nav-extras a:hover{
-    background-color: var(--color-white-principal);
-    color: var(--color-blue-principal);
-} */
-
-
-
 
 
 /*======================================== SECTION HERO ========================================*/
@@ -249,24 +246,87 @@ li {
     border: 4px solid #00e1ff;
 }
 
-/* Seção Tecnologias */
-.section-tech .tech-list {
+
+
+
+
+/*======================================== ABOUT ========================================*/
+
+.section-about{
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
+    flex-direction: column;
+}
+.section-about .content{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 2rem;
 }
 
-.tech-list li {
-    font-size: 1.2em;
+
+.section-about .content h3{
+    font-size: var(--font-size-big);
+    color: var(--color-white-principal);
+}
+
+.section-about .content p{
+    margin-bottom: .5rem;
+    color: var(--color-gray-principal);
+}
+
+.container .baixo{
+    color: var(--color-blue-principal);
+    font-size: var(--font-size-biggest);
+    opacity: .5;
+    transition: .4s;
+}
+
+.container .baixo:hover{
+    scale: 1.04;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/*======================================== TECHNOLOGIES ========================================*/
+
+.section-tech{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
+.section-tech .tech-list {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 2rem;
+}
+
+.tech-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: var(--font-size-large);
+    padding: 2rem;
+    border: 1px solid var(--color-blue-principal);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: var(--boxshadow6);
+}
+.tech-list li strong{
+    font-size: 1.2rem;
+}
 .tech-list i {
-    margin-right: 10px;
-    font-size: 2em;
-    color: #00ff88;
+    font-size: 64px;
+    color: var(--color-blue-second);
+    background-color: var(--color-white-principal);
+    padding: 0;
+    /* color: #00ff88; */
 }
 
 /* Cards de Projetos */
