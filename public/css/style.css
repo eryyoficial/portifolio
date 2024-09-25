@@ -5,6 +5,7 @@
     --font-size-biggest: 5rem;
     --font-size-big: 3rem;
     --font-size-large: 1.5rem;
+    --font-size-anormal: 2rem;
     --font-size-normal: 1rem;
     --font-size-small: .95rem;
     --font-size-smaller: .93rem;
@@ -149,6 +150,9 @@ li {
 
 
 /*======================================== HEADER ========================================*/
+.nav-menu{
+    display: none;
+}
 .nav-logo a {
     display: flex;
     flex-direction: row;
@@ -199,6 +203,7 @@ li {
 }
 
 .nav-extras a {
+    font-weight: var(--font-weight-semibold);
     transition: .4s;
 }
 
@@ -249,7 +254,31 @@ li {
 }
 
 
+.section-home .links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .4rem;
+    margin-left: .5rem;
+    margin-top: 1.3rem;
+}
 
+.section-home .links a{
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    color: var(--color-white-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--color-blue-second);
+    cursor: pointer;
+    transition: .4s;
+}
+.section-home .links a:hover{
+    transform: translateY(-4px);
+}
 
 
 /*======================================== ABOUT ========================================*/
@@ -471,7 +500,7 @@ li {
     width: 300px;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     background-color: var(--color-blue-principal);
 }
 
@@ -509,13 +538,15 @@ li {
     background-color: #2b2b2b;
     border: 1px solid var(--color-blue-principal);
     border-radius: 5px;
-
+    font-family: var(--font-familly-titles);
+    font-weight: var(--font-weight-normal);
     color: #fff;
-    font-size: 1em;
+    font-size: var(--font-size-small);
 }
 
 .section-contact textarea {
     resize: vertical;
+    height: 100px;
 }
 
 .section-contact button {
@@ -531,6 +562,7 @@ li {
 
 .section-contact button:hover {
     background-color: var(--color-blue-principal);
+    outline: 1px solid var(--color-white-principal);
 }
 
 /* Footer */
@@ -538,9 +570,11 @@ footer {
     background-color: #111;
     text-align: center;
 }
-.footer{
+
+.footer {
     flex-direction: column;
 }
+
 footer .social-links {
     list-style: none;
     display: flex;
@@ -565,4 +599,105 @@ footer .social-links a:hover {
 footer p {
     font-size: var(--font-size-small);
     color: #cfcfcf;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    header{
+        justify-content: space-around;
+        padding-inline: 1rem;
+    }
+
+    .container{
+        padding: 3rem 6rem;
+    }
+
+    .section-home{
+        padding-top: 6rem;
+    }
+
+    .nav-menu{
+        display: flex;
+        justify-content: flex-start;
+        flex: 1;
+
+    }
+
+    .nav-menu i{
+        font-size: var(--font-size-anormal);
+    }
+
+    .nav-logo{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav-extras{
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+    }
+    header .nav-extras p{
+        display: none;
+    }
+
+    .nav-extras .whats{
+        padding: .5rem;
+        font-size: var(--font-size-large);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        padding: 3rem 4rem;
+    }
+    .section-home{
+        padding-top: 6rem;
+    }
+    .section-projects .project-cards{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media screen and (max-width: 969px) {
+    .section-home{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        place-items: center;
+        padding: 8rem 4rem 4rem;
+    }
+    .section-home .content{
+        text-align: center;
+        place-items: center;
+    }
+
+    .section-home .img-hero img{
+        width: 80%;
+    }
+    .section-about .content{
+        grid-template-columns: repeat(1, 450px);
+    }
+    .section-about .content img{
+        width: 100%;
+    }
+    .section-projects .project-cards{
+        grid-template-columns: repeat(1, 400px);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .section-tech .tech-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

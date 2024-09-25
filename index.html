@@ -13,6 +13,9 @@
 
 <body>
     <header>
+        <nav class="nav-menu">
+            <i class="ri-menu-unfold-line"></i>
+        </nav>
         <nav class="nav-logo">
             <a href="#">
                 <p></p>
@@ -38,8 +41,7 @@
             </li>
         </ul>
         <div class="nav-extras">
-            <a href="https://wa.me/message/S6RZSQWV3PKXF1" class="botao_principal" target="_blank">Vamos trabalhar!</a>
-            <a href="public/docs/CV HerminioFrancisco.pdf" download="CV HerminioFrancisco.pdf" class="botao_principal" target="_blank">Baixar CV
+            <a href="public/docs/CV HerminioFrancisco.pdf" download="CV HerminioFrancisco.pdf" class="botao_principal cv" target="_blank">Baixar CV
                 <i class="ri-skip-down-line"></i>
             </a>
         </div>
@@ -47,18 +49,24 @@
 
     <!-- Seção Início -->
     <section id="home" class="container section-home">
+        
+        <div class="img-hero">
+            <img src="public/images/me.png" alt="">
+        </div>
         <div class="content">
             <h3>Desenvolvedor Fontend</h3>
             <h1>Hermínio Francisco</h1>
-            <p>Um desenvolvedor comprometido em transformando as suas ideias de negócio em interfaces interativas e
+            <p>Um desenvolvedor comprometido em transformar as suas ideias de negócio em interfaces interativas e
                 responsivas.</p>
             <div class="buttons">
                 <a href="#projects" class="botao_second">Ver Projetos</a>
-                <a href="#contact" class="botao_second">Contato</a>
+                <a href="#contact" class="botao_second">Contatar</a>
             </div>
-        </div>
-        <div class="img-hero">
-            <img src="public/images/me.png" alt="">
+            <div class="links">
+                <a href="https://github.com/eryyoficial" target="_blank"><i class="ri-github-line"></i></a>
+                <a href="https://wa.me/message/S6RZSQWV3PKXF1" target="_blank"><i class="ri-whatsapp-line"></i></a>
+                <a href="https://www.linkedin.com/in/eryyoficial" target="_blank"><i class="ri-linkedin-fill"></i></a>
+            </div>
         </div>
     </section>
 
@@ -66,12 +74,11 @@
     <section id="about" class="container section-about">
         <h2>Sobre Mim</h2>
         <div class="content">
-            <img src="public/images/me2.png" alt="">
             <div class="text">
                 <h3>Olá,</h3>
                 <p>
                     Eu sou o Hermínio Francisco, um desenvolvedor frontend apaixonado por criar interfaces web
-                    interativas e elegantes. Com experiência em HTML, CSS, JavaScript e frameworks como Bootstrap,
+                    interativas, elegantes e responsivas. Com experiência em HTML, CSS, JavaScript e frameworks como Bootstrap,
                     Tailwind Css e Blade Template (Laravel), estou constantemente aprimorando minhas habilidades.
                 </p>
                 <p>
@@ -84,6 +91,8 @@
                     desenvolvimento fullstack com tecnologias associadas à plataforma .NET.
                 </p>
             </div>
+            
+            <img src="public/images/me2.png" alt="">
         </div>
         <a class="baixo" href="#technologies"><i class="ri-arrow-down-double-line"></i></a>
     </section>
@@ -197,18 +206,18 @@
     <!-- Contato -->
     <section id="contact" class="container section-contact">
             <h2>Contato</h2>
-            <form>
+            <form action="index.html">
                 <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required placeholder="Digite aqui o seu nome">
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required placeholder="Digite aqui o seu email">
 
                 <label for="subject">Assunto:</label>
-                <input type="text" id="subject" name="subject" required>
+                <input type="text" id="subject" name="subject" required placeholder="Digite aqui assunto/tema da conversa">
 
                 <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" required placeholder="Descreva o que deseja abordar"></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
